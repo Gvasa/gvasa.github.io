@@ -1,0 +1,93 @@
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8"/>
+    <title>RoTB</title>
+    <link rel="stylesheet" media="screen" href="css/style.css">
+	<script type="text/javascript" src="js/phaser.min.js"></script>
+	<script type="text/javascript" src="js/variables.js"></script>
+	<script type="text/javascript" src="js/barrelClass.js"></script>
+	<script type="text/javascript" src="js/barrelFunctions.js"></script> 
+	<script type="text/javascript" src="js/gameUtils.js"></script>
+	<script type="text/javascript" src="js/menuUtils.js"></script>
+    <script type="text/javascript" src="js/tutorials.js"></script>
+    <script type="text/javascript" src="js/guiUtils.js"></script> 
+	<script type="text/javascript" src="js/listeners.js"></script>
+    <script type="text/javascript" src="js/animationUtils.js"></script>
+	<script type="text/javascript" src="js/assetsLoader.js"></script>
+    <script type="text/javascript" src="js/jsonReader.js"></script>
+    <script type="text/javascript" src="js/animateBoard.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+            background: #333;
+        }
+    </style>
+</head>
+<body>
+
+
+<script type="text/javascript">
+//set up the phaser game
+var game = new Phaser.Game(640, 960, Phaser.AUTO, 'gameCentered', { preload: preload, create: create, update: update });
+
+WebFontConfig = {
+
+    //  'active' means all requested fonts have finished loading
+    //  We set a 1 second delay before calling 'createText'.
+    //  For some reason if we don't the browser cannot render the text the first time it's created.
+    active: function() { game.time.events.add(Phaser.Timer.SECOND, function() {}, this); },
+
+    //  The Google Fonts we want to load (specify as many as you like in the array)
+    google: {
+      families: ['Titan One']
+    }
+
+};
+
+function preload() {
+	console.log('preload');
+    game.load.script('webfont', '//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js');
+    assetsLoader();
+
+}
+
+function create() {
+
+	console.log('create');
+    game.add.sprite(0,0, 'background');
+    //game.add.sprite(0,0, 'screencastbg');
+    
+	bClick = game.add.audio('sfx');
+    sfxLevelComplete = game.add.audio('sfxLevelComplete');
+
+    text = game.add.text(250, 16, '', { fill: '#ffffff' });
+
+    //This creates our empty array that acts as our game board
+    gameBoard = new Array(6);
+    for(var i = 0; i < TEST_CONSTANT; i++)
+    	gameBoard[i] = new Array(6);
+
+    //Set up all the GUI-elements that will be used in the game
+    setUpGui();
+    emptyBoard2();
+
+    createMenu();
+    
+    loadTutorials();
+    
+    createPostGameMenu();
+    createFailMenu();
+    createWinBarrelGlow();
+    createLastLevelMenu();
+
+}
+
+function update() {
+
+}
+
+</script>
+<div id="gameCentered"></div>
+</body>
+</html>

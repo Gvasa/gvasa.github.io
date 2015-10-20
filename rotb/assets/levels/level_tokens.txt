@@ -1,0 +1,15 @@
+a = reveal above
+b = reveal bellow
+r = reveal right
+l = reveal left
+
+^ = move col up
+v = move col down
+< = move row left
+> = move row right
+
+z = charge
+
+w = goal/win/victory
+
+0 = empty

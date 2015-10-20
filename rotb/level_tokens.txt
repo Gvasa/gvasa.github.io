@@ -1,0 +1,26 @@
+a = reveal above
+b = reveal bellow
+r = reveal right
+l = reveal left
+
+^ = move col up
+v = move col down
+< = move row left
+> = move row right
+
+z = charge
+
+w = goal/win/victory
+
+0 = empty
+
+
+
+
+
+I VÅR ARRAY:
+
+HÖGER = i+6
+VÄNSTER = i-6
+UPP = i-1
+NER = i+1

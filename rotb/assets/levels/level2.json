@@ -1,0 +1,62 @@
+{
+	"level": "level2",
+	"winRow" : 4,
+	"winCol" : 1,
+	"gameBoard": 
+	[
+		 
+			[
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0},
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0},
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0},
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0},
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0},
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0} 
+			],
+		
+			[
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_MOVE_COL_DOWN", "visible": false, "charges": 2 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 } 
+			],
+			
+			[
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_REVEAL_RIGHT", "visible": true, "charges": 1 },
+				{"type": "BARREL_REVEAL_ABOVE", "visible": false, "charges": 1 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 }
+			],
+		
+			[
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 }
+			],
+
+			[
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_WIN", "visible": true, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 }
+			],
+
+			[
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 },
+				{"type": "BARREL_EMPTY", "visible": false, "charges": 0 }
+			]
+	]
+}
