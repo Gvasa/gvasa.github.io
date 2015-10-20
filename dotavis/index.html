@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dota 2 awesomeness</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/vendor/radar-chart.css">
+    <link rel="stylesheet" href="css/vendor/dota2minimapheroes.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+    <p><strong>A Dota 2 visualization tool</strong> by Alexander Cederblad and Fredrik Johnson</p>
+
+<div class="half">
+    <div id="options">
+        <!--<input class="buttonOptions" type="checkbox" id="animateButton">
+        <label for="animateButton">Animate movement</label>-->
+        <input class="buttonOptions" type="checkbox" id="time-color-cb" checked="checked">
+        <label for="time-color-cb">Time color</label>
+    </div>
+
+    <div class="map">
+    </div>
+
+    <div class="proximity">
+    </div>
+</div>
+
+<div class="half">
+    <table cellspacing="0" class="roster">
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th data-sort="playerName">Name</th>
+                <th data-sort="levels">Levels</th>
+                <th data-sort="kills">Kills</th>
+                <th data-sort="deaths">Deaths</th>
+                <th data-sort="assists">Assists</th>
+                <th data-sort="gold">Gold</th>
+                <th data-sort="xp">XP</th>
+                <th data-sort="lasthits">LH</th>
+                <th data-sort="denies">Denies</th>
+            </tr>
+        </thead>
+        <tbody class="list">
+        </tbody>
+    </table>
+
+    <div id="radar">
+    </div>
+
+    <div class="compare">
+        <h4 id="compare-title">Comparing winners with losers</h4>
+        <div class="compare-entry">
+            <p class="compare-value">15%</p>
+            <p class="compare-name">kills</p>
+        </div>
+        <div class="compare-entry">
+            <p class="compare-value">15%</p>
+            <p class="compare-name">kills</p>
+        </div>
+        <div class="compare-entry">
+            <p class="compare-value">15%</p>
+            <p class="compare-name">kills</p>
+        </div>
+        <div class="compare-entry">
+            <p class="compare-value">15%</p>
+            <p class="compare-name">kills</p>
+        </div>
+        <div style="clear:both;"></div>
+        <!--<table cellspacing="0">
+            <thead>
+                <tr>
+                    <th data-sort="levels">Levels</th>
+                    <th data-sort="kills">Kills</th>
+                    <th data-sort="deaths">Deaths</th>
+                    <th data-sort="gold">Gold</th>
+                    <th data-sort="xp">XP</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>-->
+    </div>
+
+    <div style="clear: both"></div>
+</div>
+
+</div>
+
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="js/vendor/d3.min.js"></script>
+<script src="js/vendor/radar-chart.js"></script>
+<script src="js/map.js"></script>
+<script src="js/proximity.js"></script>
+<script src="js/roster.js"></script>
+<script src="js/radar.js"></script>
+<script src="js/compare.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
