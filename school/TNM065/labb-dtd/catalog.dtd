@@ -5,7 +5,7 @@
 
 <!ELEMENT books (book+)>
 <!ELEMENT book (author+, title, type?, price, publish_date, shelfplacement?, description?, link?)>
-<!ATTLIST book id ID #REQUIRED>
+<!ATTLIST book ID CDATA #REQUIRED>
 
 <!ELEMENT articles (article*)>
 <!ELEMENT article (author+, title, year?, link?)>
